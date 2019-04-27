@@ -1,0 +1,1091 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+    color: #333;
+}
+*:focus {
+    outline: 0 !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: raleway;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+body {
+    background-color: #fff;
+}
+
+.padded {
+    max-width: 1110px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+/*------------------------------------------------------------------------------------- header ----------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------- header ----------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------- header ----------------------------------------------------------------------*/
+#header {
+    width: 100%;
+    background-color: #fff;
+    padding: 0 50px;
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1)
+}
+
+#header > nav {
+    max-width: 1790px;
+    margin: 0 auto;
+    padding: 12px 0;
+}
+.navbar-brand {
+    margin-left: 50px;
+}
+.navbar-brand img {
+    height: 56px; 
+}
+#navbarContent {
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+
+
+
+#navbarContent .contact-info {
+    margin-left: 30px;
+}
+
+
+#navbarContent .contact-info ul {
+    list-style: none;
+    font-family: poppins;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+
+#navbarContent .contact-info ul li{
+    color: #777;
+}
+#navbarContent .contact-info h4 {
+    font-family: poppins;
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 0;
+}
+
+#navbarContent .contact-info span img{
+    width: 15px;
+    margin-right: 10px;
+}
+#navbarContent .navbar-nav li a{
+    color: #333;
+    padding: 8px 20px;
+}
+#navbarContent .navbar-nav li a:hover {
+    color: #777;
+    transition: 0.3s;
+}
+
+
+
+.burger {
+    width: 35px;
+    height: 35px;
+    margin-top: 8px;
+    position: relative;
+}
+.burger:hover .burger-line {
+    background-color: #333;
+    transition: 0.3s;
+}
+.burger-line {
+    display: block;
+    background-color: #777;
+    width: 100%;
+    height: 5px;
+    margin-bottom: 6px;
+    position: relative;
+    transform: rotate(0deg);
+    top: 0;
+}
+
+#burger-button.is-x span:nth-of-type(2){
+    opacity: 0;
+}
+#burger-button.is-x span:first-of-type {
+    transform: rotate(45deg);
+    top: 11px;
+    position: relative;
+}
+#burger-button.is-x span:last-of-type {
+    transform: rotate(-45deg);
+    top: auto;
+    bottom: 11px;
+}
+
+    
+#navbarContent .dropdown-toggle:after {
+    display: none;
+}
+    
+.dropdown-toggle .second-menu-button {
+    
+}
+.dropdown-toggle .second-menu-button span {
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: #777;
+    border-radius: 100px;
+    margin-bottom: 4px;
+}.dropdown-toggle:hover .second-menu-button span {
+    background-color: #000;
+    transition: 0.3s;
+}
+
+
+#header .dropdown-first {
+    position: absolute;
+    left: -40px;
+    top: 15px;
+}
+
+#header #navbarContent .dropdown-menu {
+    border-radius: 0;
+    top: 45px;
+}
+#header #navbarContent .dropdown-menu a {
+    font-size: 15px;
+}#header #navbarContent .dropdown-menu a:hover {
+    background-color: #496891;
+    color: white;
+    transition: 0.2s;
+}
+#header #navbarContent .dropdown-menu.show {
+    left: auto;
+    right: 0;
+    background-color: white;
+    animation-name: fadein;
+    animation-duration: 0.3s;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    padding: 0;
+    margin: 0;
+}
+#header #navbarContent .dropdown-first .dropdown-menu.show {
+    right: auto;
+    left: 0;
+    top: 60px;
+}
+
+/*-------------------------------------------------------------------------------------------------------- main content ------------------------*/
+/*-------------------------------------------------------------------------------------------------------- main content ------------------------*/
+/*-------------------------------------------------------------------------------------------------------- main content ------------------------*/
+/*-------------------------------------------------------------------------------------------------------- main content ------------------------*/
+/*-------------------------------------------------------------------------------------------------------- main content ------------------------*/
+/*-------------------------------------------------------------------------------------------------------- main content ------------------------*/
+
+#to-top {
+    position: fixed;
+    z-index:99;
+    bottom: 33px;
+    right: 33px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: #ff7302;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    line-height: 35px;
+    font-family: raleway;
+    transform: rotate(-90deg);
+    border-left: solid 2px #cf4302;
+}#to-top:hover {
+    bottom: 34px;
+}#to-top:active {
+    bottom: 34px;
+}
+
+
+#main-content {
+    width: 100%;
+    margin-top: 78px;
+}
+
+#main-content .owl-home {
+    height: CALC(100vh - 150px);
+    min-height: 350px;
+    overflow: hidden;
+}
+
+
+
+/*------------ contact carousel ---------------*/
+
+#contact-carousel {
+    width: 449px;
+    height: 450px;
+    position: absolute;
+    right: 5%;
+    top: CALC(80px + 10vh);
+    background-color: rgba(0,0,0,0.8);
+    z-index: 9;
+    padding: 30px 15px;
+    text-align: right;
+}
+#contact-carousel * {
+    color: white;
+}
+#contact-carousel h2, #contact-carousel h3{
+    text-align: left;
+}
+#contact-carousel h3 span {
+    color: #ff7302;
+}
+#contact-carousel h3 {
+    font-size: 24px
+}
+#contact-carousel input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px #848484;
+    padding: 0;
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#contact-carousel input[type=checkbox] {
+    width: auto;
+    margin: 0;
+    margin-right: 10px;
+    display: inline;
+    margin-top: 20px;
+    position: relative;
+    top: 3px;
+}
+#contact-carousel input[type=submit] {
+    background-color: #ff7302;
+    color: white;
+    font-weight: 500;
+    border: none;
+    margin: 0;
+    width: 150px;
+    padding: 6px 10px;
+    display: inline-block;
+    margin-left: 150px;
+}#contact-carousel input[type=submit]:hover {
+    background-color: #333;
+    transition: 0.2s;
+}#contact-carousel input[type=submit]:active {
+    position: relative;
+    top: 1px;
+}
+
+#contact-carousel label {
+    display: inline;
+    text-align: left;
+}
+
+#contact-carousel label p {
+    display: inline-block;
+    text-align: left !improtant;
+    width: CALC(100% - 30px);
+    vertical-align: top;
+    margin-top: 24px;
+    font-size: 12px;
+    font-weight: 400;
+}
+/*--------------------- checkbox --------------------*/
+#contact-carousel #contact-check-carousel {
+    display: none;
+}
+.checkboxContainer {
+    cursor: pointer;
+    position: relative;
+}
+#contact-carousel .check-mark {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #aaa;
+    margin-right: 5px;
+    margin-top: 28px;
+    position: relative;
+    left: -3px
+}
+
+#contact-carousel .checkboxContainer:hover .check-mark {
+    background-color: #777;
+}
+#contact-check-carousel:checked + .check-mark {
+    background-color: #fff !important;
+    background-image: url(../images/check-box-carousel.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+
+/*------------------------------------------------------------------------------------------ home carousel ----------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------ home carousel ----------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------ home carousel ----------------------------------------------------------------*/
+
+.needed-for-aos {
+    background-color: #000;
+    height: CALC(100vh - 78px);
+    width: 100%;
+    min-height: 350px;
+}
+.owl-carousel {
+    height: CALC(100vh - 78px);
+    min-height: 350px;    
+}
+
+.owl-carousel .owl-item .item img {
+}
+
+.owl-carousel .owl-item, .owl-carousel .item {
+    height: 100%;
+    min-height: 350px;
+}
+.owl-carousel .owl-item{
+    height: CALC(100vh - 170px)
+}
+.owl-carousel .owl-item img {
+    transform-style: initial;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.owl-thumb-item img {
+    width: 150px;
+    height: auto;
+}
+
+.owl-thumbs {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: table;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    background-color: #000;
+    overflow-x: overlay;
+    display: flex;
+    justify-content: center;
+}
+
+.owl-thumb-item {
+    display: table-cell;
+    border: none;
+    background: none;
+    padding: 0;
+    opacity: .3;
+    border: solid 5px black;
+    
+}
+
+.owl-thumb-item.active {
+    opacity: 1;
+}
+
+.label {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #0a6cff;
+    color: white;
+    padding: 10px 20px;
+    z-index: 5;
+    text-align: center;
+}
+
+
+.carousel-text {
+    position: absolute;
+    bottom: 180px;
+    left: 5%;
+    z-index: 10
+}
+.carousel-text h1 {
+    font-size: 100px;
+    font-family: poppins;
+}
+.carousel-text p {
+    font-size: 30px;
+}
+
+.carousel-text h1, .carousel-text p {
+    color: white;
+    font-weight: 600;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0,0,0,1)
+}
+
+
+#main-content .owl-carousel .owl-nav {
+    display: block;
+    position: absolute;
+    top: CALC(50% - 150px);
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+#main-content .owl-carousel .owl-nav * {
+    font-size: 100px;
+    color: white;
+}
+#main-content .owl-carousel .owl-nav > *:hover {
+    background-color: rgba(0,0,0,0.7);
+    transition: 0.2s;
+}
+
+#main-content .owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+}
+#main-content .owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+}
+/*------------------------------------------------------------------------------------ floor plans ------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------ floor plans ------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------ floor plans ------------------------------------------------------------------------------*/
+
+
+#floor-plans {    
+    margin: 70px auto;
+}
+#floor-plans > nav {
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+#floor-plans > nav .nav {
+    border-bottom: solid 1px #cecece;
+}
+#floor-plans > nav a {
+    width: auto;
+    flex: initial;
+    padding: 8px 40px;
+    background: transparent;
+    border: none;
+    border-bottom: solid 3px transparent;
+    font-size: 13px;
+    line-height: 20px;
+    color: #777;
+}
+#floor-plans > nav a.active {
+    border-bottom: solid 3px #ff7302;
+    transition: 0.2s;
+    color: #333;
+}
+
+
+#floor-plans .floor-container {
+    display: flex;
+    justify-content: space-between;
+}
+#floor-plans .floor-container {
+    padding: 0;
+    margin: 0;
+}
+#floor-plans .floor-container > * {
+    width: 31.5%;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}#floor-plans .floor-container > *:hover {    
+    box-shadow: 0 3px 15px rgba(0,0,0,0.4);
+    transition: 0.3s;
+    cursor: pointer;
+}#floor-plans .floor-container > *:hover .floor-image p {
+    background-color: #333;
+    transition: 0.3s;
+}
+
+
+#floor-plans .floor-container a {
+    text-decoration: none;
+}
+
+#floor-plans .floor-image {    
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 63%;
+    position: relative;
+}
+#floor-plans .floor-image p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0,0,0,0.6);
+    display: block;
+    text-align: left;
+    padding: 8px 20px;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 0
+}
+#floor-plans .not-available {
+    background-image: url(../images/sorry.jpg);
+}
+
+#floor-plans .floor-info * {
+    color: #777;
+    font-size: 14px;
+    font-family: poppins;
+}
+#floor-plans .floor-info p {
+    text-align: left;
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 0;
+    border-top: solid 1px #ccc;
+}
+#floor-plans .floor-info .floor-links {
+    padding: 15px 20px;
+    border-top: solid 1px #ccc;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+#floor-plans .floor-info .floor-links button {
+    border: none;
+    background-color: #ff7302;
+    color: white;
+    padding: 8px 20px;
+    margin-top: 2px;
+    width: auto;
+}#floor-plans .floor-info .floor-links button:hover {
+    background-color: #333;
+    transition: 0.2s;
+}#floor-plans .floor-info .floor-links button:active {
+    position: relative;
+    top: 1px;
+}
+
+#floor-plans .floor-info .price{
+    padding-top: 10px;
+    color: #ff7302;
+    font-weight: 500;
+}
+
+
+
+
+
+/*------------------------------------------------------------------------------------ PROPERTY DETAILS ------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------ PROPERTY DETAILS ------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------ PROPERTY DETAILS ------------------------------------------------------------------------------*/
+
+
+#property-details {
+    margin: 70px auto 0;
+    /*background-image: url(../images/property-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;*/
+    box-sizing: border-box;
+    padding: 70px 0;
+}
+#property-details h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: raleway;
+    font-weight: 700;
+}
+#property-details p {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-family: poppins
+}
+
+#property-details .details-container > div {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    margin-top: 30px;
+}
+#property-details .details-container h3 {
+    width: 270px;
+}
+#property-details .details-container > div > div {
+    width: CALC(100% - 270px);
+}
+
+#property-details  .amenities {
+    display: flex;
+    flex-wrap: nowrap;
+}
+#property-details  .amenities > div {
+    width: 100%;
+    border-left: solid 1px #aaa;
+    padding: 0 20px;
+}
+#property-details  .amenities > div:first-of-type {
+    border: none;
+    padding-left: 0;
+}
+#property-details  .amenities > div p:before {
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/ok.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    content: "";
+    display: inline-block;
+    margin-right: 15px;
+}
+
+
+/*------------------------------------------------------------------------------------ LOCATION ------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------ LOCATION ------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------ LOCATION ------------------------------------------------------------------------------*/
+
+#location {
+    background-color: #ff7302;
+    
+}
+#location .row {
+    margin: 0;
+}
+#location .row > * {
+    padding: 0;
+    margin: 0;
+}
+#location * {
+    color: white;
+    color: white;
+}
+
+#location .location-info {
+    padding: 40px 45px;
+}
+
+
+#map {
+    width: 100%;
+    height: 100%;
+    display: block;
+    
+    border-top: solid 1px #b09c8d;
+    border-bottom: solid 1px #b09c8d;
+    background-color: #777;
+}
+#pano {
+    width: 100%;
+    height: 400px;
+    background-color: #999;
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------------------- CONTACT ------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------- CONTACT ------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------- CONTACT ------------------------------------------------------------------------------*/
+
+#contact {
+    padding: 40px 0 70px;
+}
+#contact > h2 {
+    margin-bottom: 30px;
+}
+
+#contact .contact-container {
+    display: flex;
+}
+
+
+#contact .contact-container .info {
+    width: 320px;
+}
+#contact .contact-container .info h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+#contact .contact-container .info p {
+    margin-bottom: 0;
+}
+#contact .contact-container .contact-form {
+    width: CALC(100% - 320px);
+}
+#contact .contact-container .contact-form p {
+    margin-bottom: 30px;
+}
+#contact .contact-container .contact-form form {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+
+#contact .contact-container .contact-form input {
+    width: CALC(50% - 30px);
+    margin: 0 15px 5px;
+    border: none;
+    border-bottom: solid 1px #cecece;
+    font-size: 13px;
+    padding: 10px 5px;
+    transition: 0.2s;
+}
+#contact .contact-container .contact-form input[type=checkbox] {
+    width: auto;
+    margin: 0;
+    margin-right: 10px;
+    display: inline;
+}
+#contact .contact-container .contact-form input[type=submit] {
+    background-color: #ff7302;
+    color: white;
+    font-weight: 500;
+    border: none;
+    margin: 0;
+    margin-left: 15px;
+}#contact .contact-container .contact-form input[type=submit]:hover {
+    background-color: #333;
+    transition: 0.2s;
+}#contact .contact-container .contact-form input[type=submit]:active {
+    position: relative;
+    top: 1px;
+}
+
+#contact .contact-container .contact-form label {
+    display: inline;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+#contact .contact-phone {
+    color: #ff7302;
+    font-weight: 600;
+    font-family: poppins;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+#contact input::placeholder {
+    opacity: 0.7;
+    transition: 0.2s;
+}
+#contact input:hover::placeholder {
+    opacity: 1;
+}
+
+/*------------------ checkbox styling --------------------*/
+
+#contact #contact-check {
+    display: none;
+}
+.checkboxContainer {
+    cursor: pointer;
+    position: relative;
+}
+#contact .check-mark {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #ddd;
+    border-radius: 2px;
+    margin-right: 5px;
+    position: relative;
+    top: 4px;
+}
+
+#contact .checkboxContainer:hover .check-mark {
+    background-color: #bbb;
+}
+#contact-check:checked + .check-mark {
+    background-color: #3f51b5 !important;
+    background-image: url(../images/check-box.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+/*---------------------------------------------------------------------------------------------- Footer ------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------- Footer ------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------- Footer ------------------------------------------------------------------------------*/
+
+
+#footer {
+    background-color: #424242;
+    text-align: center;
+    padding: 40px 5%;
+}
+#footer a {
+    color: #ff7302;
+    padding: 5px 20px;
+    font-size: 15px;
+    white-space: nowrap;
+}#footer a:hover {
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}#footer a:active {
+    position: relative;
+    top: 1px;
+}
+#footer .soc-media {
+    position: absolute;
+    left: 30px;
+}
+
+
+#footer .soc-media a {
+    padding: 5px;
+    
+}
+
+#footer p {
+    color: #9d9d9d;
+    font-size: 13px;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+
+
+
+/*------------------------------------------------------------------------------------ Keyframes ------------------------------------------------------------------------------*/
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/*------------------------------------------------------------------------------------ MEDIA QUERY ------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------ MEDIA QUERY ------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------ MEDIA QUERY ------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------ MEDIA QUERY ------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------ MEDIA QUERY ------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------ MEDIA QUERY ------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------ MEDIA QUERY ------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------ MEDIA QUERY ------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 1366px) {
+    #contact-carousel {
+        padding: 20px 15px;
+        height: auto;
+        width: 370px;
+        top: 100px;
+    }
+    #contact-carousel input {
+        margin-top: 20px;
+    }
+    body {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+
+    #navbarContent .navbar-nav li a {
+        color: #333;
+        padding: 8px;
+    }
+    .carousel-text h1 {
+        font-size: 70px;
+    }
+    .carousel-text p {
+        font-size: 30px;
+    }
+    #header .dropdown-first {
+        left: -25px;
+    }
+}
+@media screen and (max-width: 1279px) {
+    #footer .soc-media {
+        position: static;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    #property-details  .amenities {
+        flex-wrap: wrap;
+    }
+    #property-details  .amenities > div {
+        border: none;
+        padding: 0;
+    }
+    #contact-carousel {
+        display: none;
+    }
+}
+@media screen and (max-width: 991px) {
+    #navbarDropdown.dropdown-toggle, #navbar-one-Dropdown.dropdown-toggle {
+        display: none;
+    }
+    #navbarContent .dropdown-menu {
+        display: block;
+        border: none;
+        margin: 0;
+        padding: 0;
+        position: static;
+        
+    }
+    
+    #header .dropdown {
+        border-top: solid 1px #777;
+        padding: 5px 0;
+        margin-top: 10px;
+        position: static;
+    }
+    
+    #header .dropdown-menu a {
+        font-size: 16px;        
+    }#header #navbarContent .dropdown-menu a:hover {
+        background-color: #fff;
+        color: #777;
+    }
+    #header #navbarContent {
+        flex-wrap: wrap-reverse;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 20px 48px;
+        box-shadow: 0 6px 5px rgba(0,0,0,0.1);
+        overflow-y: overlay;
+        max-height: CALC(100vh - 70px);
+    }
+    
+    
+    #navbarContent .contact-info {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    
+    .carousel-text h1 {
+        font-size: 70px;
+    }
+    .carousel-text p {
+        font-size: 30px;
+    }
+    .owl-thumbs {
+        justify-content: flex-start;
+    }
+    
+    .navbar-brand {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 860px) {
+    #floor-plans .floor-info * {
+        font-size: 13px;
+    }
+    #floor-plans .floor-info p {
+        padding: 6px 10px;
+    }
+    #floor-plans .floor-info .floor-links {
+        padding: 6px 10px;
+    }
+    #floor-plans .floor-image p {
+        padding: 6px 10px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #contact .contact-container .contact-form input {
+        width: 48%;
+        margin: 0 0 5px;
+        margin-right: 2%;
+    }
+    #contact .contact-container .contact-form input[type=submit] {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #floor-plans .floor-container {
+        flex-wrap: wrap;
+    }
+    #floor-plans .floor-container > * {
+        width: 100%;
+        display: block;
+        margin-bottom: 40px;
+    }
+    #floor-plans > nav a {
+        padding: 10px 20px;
+    }
+    
+    
+    #property-details .details-container > div {
+        flex-wrap: wrap;
+    }
+    #property-details .details-container * {
+        width: 100% !important;
+    }
+    #location .row {
+        flex-wrap: wrap-reverse;
+    }
+    #map {
+        width: 100%;
+        height: 200px;
+        border-bottom: solid 2px #333;
+    }
+    #pano {
+        height: 170px;
+    }
+    
+    #contact .contact-container {
+        flex-wrap: wrap;
+    }
+    #contact .contact-container > * {
+        width: 100% !important;
+    }
+    #contact .contact-container .contact-form input {
+        width: 48%;
+        margin: 0 0 5px;
+        margin-right: 2%;
+    }
+}
+@media screen and (max-width: 639px) {
+    .carousel-text h1 {
+        font-size: 40px;        
+    }
+    .carousel-text p {
+        font-size: 25px;
+    }
+    .carousel-text {
+        bottom: 150px;
+    }
+}
+@media screen and (max-width: 414px) {
+    #floor-plans > nav a {
+        padding: 5px 10px;
+    }
+    #header {
+        padding: 0 20px;
+    }
+}
+
