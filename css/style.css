@@ -970,7 +970,7 @@ body {
     #header #navbarContent {
         flex-wrap: wrap-reverse;
         position: fixed;
-        top: 70px;
+        top: 76px;
         left: 0;
         width: 100%;
         padding: 20px 48px;
